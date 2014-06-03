@@ -13,16 +13,16 @@ import perro.model.Perro;
  * @author Ruben
  */
 public class Persona {
-    private Perro perro;
+    private Mascotas mascota;
 
-    public Perro getPerro() {
-        return perro;
+    public Mascotas getMascota() {
+        return mascota;
     }
 
-    public void setPerro(Perro perro) {
-        this.perro = perro;
+    public void setMascota(Mascotas mascota) {
+        this.mascota = mascota;
     }
-    
+
    
     
 }

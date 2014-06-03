@@ -13,6 +13,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import perro.model.Mascotas;
 import perro.model.Perro;
 import perro.model.Persona;
 
@@ -33,10 +34,12 @@ public class ServletRegistro extends HttpServlet {
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        Perro perro = new Perro();
-        perro.setNombre("Coky");
-        Persona yo= new Persona();
-        yo.setPerro(perro);
+        Mascotas  mascota =  new Mascotas();
+        mascota.setTipo("Pez");
+        mascota.setNombre("Nemo");
+        Persona yo=new  Persona();
+        yo.setMascota(mascota);
+        
        request .setAttribute("registro", yo);
        RequestDispatcher despachador = request.getRequestDispatcher("/registro.jsp");
        despachador.forward(request, response);

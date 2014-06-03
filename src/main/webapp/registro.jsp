@@ -13,6 +13,6 @@
     </head>
     <body>
         
-        ${registro.getPerro().obtenerRegistro()}
+        ${registro.getMascota().registromascota()}
     </body>
 </html>
