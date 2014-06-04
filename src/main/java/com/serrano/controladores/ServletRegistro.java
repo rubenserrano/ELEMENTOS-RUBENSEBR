@@ -13,9 +13,10 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import perro.model.Mascotas;
+import perro.model.Mascota;
 import perro.model.Perro;
 import perro.model.Persona;
+import perro.model.Gato;
 
 /**
  *
@@ -34,11 +35,15 @@ public class ServletRegistro extends HttpServlet {
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        Mascotas  mascota =  new Mascotas();
-        mascota.setTipo("Pez");
-        mascota.setNombre("Nemo");
+        Mascota  mascota =  new Gato(); 
+        /**
+         * Este es el problema ya que gato aparece  se le llama inyeccion  dependencia.
+         * Arquitectura Orientada a objetos reutilizacion de codigo
+         * De igual forma se le llama SOA Arquitencuta Orientada a Servicios. <<<Se reutiliza software
+         */
+        
         Persona yo=new  Persona();
-        yo.setMascota(mascota);
+        yo.setMascota(mascota);    
         
        request .setAttribute("registro", yo);
        RequestDispatcher despachador = request.getRequestDispatcher("/registro.jsp");

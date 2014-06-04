@@ -12,12 +12,7 @@ package perro.model;
  */
 public class PrograrRegistro {
     public static void main(String args[]){
-        Mascotas mascota= new Mascotas();
-        mascota.setTipo("Pez");
-        mascota.setNombre("Nemo");
-        Persona x=new Persona();
-        x.setMascota(mascota);
-        
+       
         /**
          * esto se llama composicion se dice que x tiene p 
          * el siguiente es lo que recibira el paso 4 

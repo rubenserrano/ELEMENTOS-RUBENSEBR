@@ -10,17 +10,8 @@ package perro.model;
  *
  * @author Ruben
  */
-public class Mascotas {
-    private String tipo;
+public class Gato implements Mascota{
     private String nombre;
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
 
     public String getNombre() {
         return nombre;
@@ -29,10 +20,9 @@ public class Mascotas {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    public String registromascota(){
-        
-        return "Tu "+tipo+". Con nombre "+nombre+" a quedado reguistrado";
+    @Override
+    public String obtenerRegistro(){
+        return "El gatito que registraste es "+nombre;
     }
-            
     
 }
