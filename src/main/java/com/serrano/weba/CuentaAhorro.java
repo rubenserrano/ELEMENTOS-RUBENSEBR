@@ -10,6 +10,10 @@ package com.serrano.weba;
  *
  * @author T107
  */
-public class CuentaAhorro {
+public class CuentaAhorro implements Cuenta{
+
+    public String crearCuenta() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

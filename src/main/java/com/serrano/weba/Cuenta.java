@@ -8,10 +8,10 @@ package com.serrano.weba;
 
 /**
  *
- * @author T107
+ * @author Ruben
  */
-public class CuentaCheques implements Cuenta{
-    public String crearCuenta(){
-        
+public interface Cuenta {
+    
+    public String crearCuenta();
     }
-}
+

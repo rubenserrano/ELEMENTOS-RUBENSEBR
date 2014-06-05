@@ -10,6 +10,9 @@ package com.serrano.weba;
  *
  * @author T107
  */
-public class CuentaNomina {
+public class CuentaNomina implements Cuenta{
+    public String crearCuenta(){
+        
+    }
     
 }
