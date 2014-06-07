@@ -13,6 +13,7 @@ package com.serrano.weba;
 public class CuentaNomina implements Cuenta{
     public String crearCuenta(){
         
+        return "Cuenta de Nomina creada";
     }
     
 }

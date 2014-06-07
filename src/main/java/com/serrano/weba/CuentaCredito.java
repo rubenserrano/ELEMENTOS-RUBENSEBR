@@ -12,6 +12,6 @@ package com.serrano.weba;
  */
 public class CuentaCredito implements Cuenta{
     public String crearCuenta(){
-        
+        return "Cuenta de credito creada";
     }
 }

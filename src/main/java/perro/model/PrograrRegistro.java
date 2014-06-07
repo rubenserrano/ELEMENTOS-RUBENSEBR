@@ -17,7 +17,10 @@ public class PrograrRegistro {
          * esto se llama composicion se dice que x tiene p 
          * el siguiente es lo que recibira el paso 4 
          */
-        System.out.println(x.getMascota().registromascota());
+        Mascota x=new Gato();
+        
+                
+        System.out.println(x.obtenerRegistro());
         
     }
     
